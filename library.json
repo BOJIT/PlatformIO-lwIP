@@ -14,9 +14,13 @@
         "url": "https://github.com/BOJIT/PlatformIO-lwIP"
     },
     "version" : "1.0.0",
-    "license": "MIT",
+    "license": "BSD-2-Clause",
     "frameworks": "libopencm3",
     "platforms": "ststm32, gd32v, siliconlabsefm32, nxplpc, atmelsam", 
     "build" : {
+        "extraScript": "lib_build.py"
+    },
+    "dependencies": {
+        "bojit/PlatformIO-FreeRTOS": "^1.0.0"
     }
 }
